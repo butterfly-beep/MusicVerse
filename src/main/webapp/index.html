@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicVerse | Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #100d18;
+            color: #f5f0ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            padding: 22px 8%;
+            border-bottom: 1px solid #38294b;
+            background: #171120;
+        }
+
+        .logo {
+            color: #d9a7ff;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #c99aff;
+        }
+
+        p {
+            color: #c7bdd5;
+            font-size: 18px;
+            max-width: 550px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 9px;
+            background: #8b5bd6;
+            border: 1px solid #a77be8;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: #7041b5;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            border-top: 1px solid #38294b;
+            color: #b9acc9;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html">♫ MusicVerse</a>
+    </nav>
+
+    <main>
+        <h1>Welcome to <span>MusicVerse</span></h1>
+
+        <p>
+            Your music event management platform.
+            Open your dashboard to manage customers,
+            artists, and music events in one place.
+        </p>
+
+        <a class="button" href="management.html">
+            Open Dashboard →
+        </a>
+    </main>
+
+    <footer>
+        MusicVerse · Your world of music events
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicVerse | Dashboard</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #100d1c;
+            color: #f8f6ff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 20px 7%;
+            background: #19152a;
+            border-bottom: 1px solid #302747;
+        }
+
+        .logo {
+            color: #c9a7ff;
+            font-size: 25px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        nav .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        nav .links a {
+            color: #d8d1e8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav .links a:hover { color: #c9a7ff; }
+
+        main {
+            max-width: 1150px;
+            margin: auto;
+            padding: 55px 24px;
+        }
+
+        .eyebrow {
+            color: #c9a7ff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            margin: 12px 0;
+        }
+
+        .intro {
+            color: #aaa3bd;
+            line-height: 1.7;
+            max-width: 620px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #25203a, #191529);
+            border: 1px solid #39304f;
+            border-radius: 18px;
+            padding: 28px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #a77af3;
+        }
+
+        .symbol {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 { font-size: 22px; }
+
+        .card p {
+            color: #aaa3bd;
+            line-height: 1.7;
+            min-height: 52px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 18px;
+            border-radius: 9px;
+            background: #8b5cf6;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .button:hover { background: #7545df; }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #827b96;
+            border-top: 1px solid #302747;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html">♫ MusicVerse</a>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="management.html">Dashboard</a>
+            <a href="manage?type=customers">Customers</a>
+            <a href="manage?type=artists">Artists</a>
+            <a href="events">Events</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="eyebrow">Your workspace</div>
+        <h1>Manage your music universe.</h1>
+        <p class="intro">
+            Welcome to MusicVerse. Manage your customers, artists and live
+            events from one place, with your records connected to MySQL.
+        </p>
+
+        <div class="cards">
+            <section class="card">
+                <div class="symbol">♙</div>
+                <h2>Customers</h2>
+                <p>View customer records, register new customers and remove existing records.</p>
+                <a class="button" href="customer.html">Manage Customers</a>
+
+            </section>
+
+            <section class="card">
+                <div class="symbol">♫</div>
+                <h2>Artists</h2>
+                <p>Manage artist profiles, music genres, locations and performance fees.</p>
+                <a class="button" href="artist.html">Manage Artists →</a>
+            </section>
+
+            <section class="card">
+                <div class="symbol">✦</div>
+                <h2>Events</h2>
+                <p>Explore events stored in your MusicVerse database.</p>
+                <a class="button" href="events">Explore Events →</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>MusicVerse · Your music, your events, your universe.</footer>
+</body>
+</html>
